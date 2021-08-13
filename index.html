@@ -5,82 +5,112 @@
         <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
         <title>maquette reservia</title>
     </head>
 
     
     <body>
 
-    <!--HEADER START-->
-    <header>
-        <p>
+       <!--HEADER START-->
+       <header>
+          <p class="reservia">
             <img id="logo" src="Reservia@3x.png" alt="logo Reservia" />
-        </p>
-        <nav>
+          </p>
+          <nav>
             <ul>
                 <li><p class="lien">Hebergements</p></li>
                 <li><p class="lien">Activités</p></li>
                 <li><p class="inscrire">S'inscrire</p></li>
             </ul>
-        </nav>
-    </header>
-    <!--HEARDER END-->
-    <!--MAIN START-->
-    <main>
-    
-        <!--section_trouver-->
+          </nav>
+        </header>
+        <!--HEARDER END-->
+       <!--MAIN START-->
+       <main>
+          <!--section_trouver-->
+          <section>
+             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+             <h2>En plein centre ville ou en pleine nature</h2>
+              <form>
+                <div class="recherche">
+                 <input type="text" id="barre" name="ville" placeholder="Marseille,France">
+                 <button class="rechercher" type="button">Rechercher</button>
+                </div>
+              </form>
+          </section>
+         <!--section_hebegerments-->
+          <section>
 
-        <section>
+          </section>
+         <!--section_activites-->
+          <section class="activites">
+              <h1>Activités à Marseille</h1>
+              <div class="activités">
+                  <div class="vieux_port">
+                      <img class="vieuxport" src="vieux_port.jpg" alt="photo vieux port">
+                      <h4>Vieux Port</h4>
 
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <h2>En plein centre ville ou en pleine nature</h2>
+                  </div>
+                  <div class="fort_iles">
+                      <div class="pomegues">
+                          <img class="fort" src="pomegues.jpg" alt="fort de pomegues">
+                          <p><strong>Fort de Pomègues</strong></p>
 
-            <form>
+                      </div>
+                      <div class="frioul">
+                          <img class="iles" src="frioul.jpg" alt="iles de frioul">
+                          <p><strong>Îles du Frioul</strong></p>
+                      </div>
 
-               <div>
+                  </div>
+                  <div class="parc">
+                      <img class="parc_nationnal" src="calanques.jpg" alt="photo parc nationnal">
+                      <h4>Parc Nationnal des Calanques</h4>
 
-                <input type="text" id="barre" name="ville" placeholder="Marseille,France">
-                <button class="rechercher" type="button">Rechercher</button>
-                
+                  </div>
+                  <div class="notre_parc">
+                      <div class="notre_dame">
+                          <img class="dame" src="notre_dame.jpg" alt="photo notre dame">
+                          <p>Notre-Dame-de-la-Garde</p>
 
-               </div>
+                      </div>
+                      <div class="parc_longchamp">
+                          <img class="longchamp" src="parc_longchamp.jpg" alt="photo parc longchamp">
+                          <p>Parc Longchamp</p>
 
-            </form>
+                      </div>
 
-        </section>
-
-        <!--section_hebegerments-->
-
-        <section>
-
-        </section>
-
-        <!--section_activites-->
-
-        <section>
-
-        </section>
+                  </div>
+              </div>
+          </section>
         </main>
         <!--MAIN END-->
+      <!--FOOTER-->
+      <footer>
+         <div class="apropos">
+            <h3><strong>A propos</strong></h3>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales de vente</p>
+            <p>Données et confidentialité</p>
 
+         </div>
+
+         <div class="hebergements">
+            <h3>Nos hébergements</h3>
+            <p>Charte qualité</p>
+            <p>Soumettre votre hôtel</p>
+
+         </div>
+
+         <div class="assistance">
+             <h3>Assistance</h3>
+             <p>Centre d'aide</p>
+             <p>Nous contacter</p>
+
+         </div>
+      </footer>
     </body>
-
-    <!--footer-->
-
-    <footer>
-        <div class="apropos">
-
-        </div>
-
-        <div class="hebergements">
-
-        </div>
-
-        <div class="assistance">
-
-        </div>
-    </footer>
 
     
 

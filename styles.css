@@ -35,8 +35,11 @@ li
   list-style: none;
   margin-left: 90px;
 }
-
-p
+.reservia
+{
+  font-size: 1.2em;
+}
+.lien .inscrire
 {
   font-size: 1em;
 }
@@ -47,16 +50,17 @@ p
   font-weight: bold;
 }
 
-/*section trouver*/
+/*SECTION TROUVER*/
 
 h1
 {
    margin-top: 2em;
+   font-size: 1.3em;
 }
 
 h2
 {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: normal;
 }
 
@@ -68,10 +72,11 @@ form
   height:auto;
 }
 
-div
+.recherche
 {
   display: flex;
   justify-content: flex-start;
+  margin-left: 1em;
 }
 
 
@@ -85,25 +90,200 @@ div
   border-radius: 1em 0em 0em 1em;
   margin-left: -1em;
   outline: none;
-  background-size:1em;
+  background-size:0.8em;
   background-image: url('map-marker-alt-solid.svg');
   background-repeat: no-repeat;
   background-position: 1em 0.8em;
   background-size: 1.2em;
   
 }
-
+::placeholder
+{
+  font-weight: bold;
+  color: black;
+  font-size: 1.4em;
+}
+/*bouton  bleu rechercher*/
 .rechercher
 {
   background-color: #0065FC;
   border: none;
   color: white;
   padding: 1em;
-  padding-inline: 2.8em;
+  padding-inline: 2.5em;
   margin-left: -1em;
   text-align: center;
   text-decoration: none;
-
+  font-weight: bold;
   border-radius:0em 1em 1em 0em;
+}
+      /*ACTIVITES A MARSEILLE_START*/
+.activites
+{
+  width: 100%;
+  height: 35em;
+}
+/*contenant des 4 div*/
+.activités
+{
+  display: flex;
+  justify-content: space-between;
+}
+/*contenant vieux port*/
+.vieux_port 
+{
+  width: 19em;
+  height: 29em;
+  border:transparent;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+  overflow: auto;
+}
+/*img_vieux_port*/
+.vieuxport
+{
+  height: 25em;
+  width: 29em;
+  float:right;
+  border:transparent;
+}
+h4
+{
+  padding-left: 2em;
+  padding-top: 25em;
+}
+/*contenant fort de pomegues et iles*/
+.fort_iles
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 19em;
+  height: 29em;
+  border: transparent;
+}
+/*contenant pomegues*/
+.pomegues
+{
+  height: 15em;
+  width: 19em;
+  border: transparent;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+}
+/*img_fort pomegues*/
+.fort
+{
+  height: 11.5em;
+  width: 19em;
+  border-radius: 1.5em 1.5em 0em 0em;
+  float: right;
+}
+/*contenant frioul*/
+.frioul
+{
+  height: 11em;
+  width: 19em;
+  border: transparent;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+}
+/*img_iles de frioul*/
+.iles
+{
+  height: 7em;
+  width: 19em;
+  float: right;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+/*contenant parc des calanques*/
+.parc
+{
+  width: 19em;
+  height: 29em;
+  border: transparent;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+  overflow: auto;
+}
+/*img_parc*/
+.parc_nationnal
+{
+  height: 25em;
+  width: 30em;
+  float: right;
+  border: transparent;
+}
+/*contenant notre dame et longchamp*/
+.notre_parc
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 19em;
+  height: 29em;
+  border: transparent;
+}
+/*contenant notre dame*/
+.notre_dame
+{
+  height: 12em;
+  width: 19em;
+  border: transparent;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2; 
+}
+/*img_notre dame*/
+.dame
+{
+  height: 8em;
+  width: 19em;
+  float: right;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+/*contenant parc longchamp*/
+.parc_longchamp
+{
+  height: 14em;
+  width: 19em;
+  border: transparent;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+}
+/*img_parc longchamp*/
+.longchamp
+{
+  height: 10em;
+  width: 19em;
+  float: right;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+/*FOOTER_START*/
+footer
+{
+  display: flex;
+  width: 100%;
+  height: 14em;
+  background-color:#F2F2F2;
+}
 
+.apropos
+{
+  width: 29em;
+  height: 10em;
+  margin-left: 3em;
+}
+.hebergements
+{
+  width: 29em;
+  height: 10em;
+}
+.assistance
+{
+  width: 29em;
+  height: 10em;
+}
+h3
+{
+  font-size: 1.3em;
 }

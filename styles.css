@@ -6,7 +6,7 @@ html
   margin-right: auto;
   width: 1440px;
 }
-/*header*/
+/*HEADER_START*/
 header
 {
     height: 3em;
@@ -31,6 +31,7 @@ li
   list-style: none;
   margin-left: 90px;
 }
+/*logo*/
 .reservia
 {
   font-size: 1.2em;
@@ -45,7 +46,7 @@ li
   color:#0065FC;
   font-weight: bold;
 }
-
+/*HEADER_END*/
 /*SECTION TROUVER*/
 
 h1
@@ -113,14 +114,67 @@ form
   font-weight: bold;
   border-radius:0em 1em 1em 0em;
 }
-      /*ACTIVITES A MARSEILLE_START*/
+/*SECTION HEBERGEMENTS_START*/
+/*Contenant hébergements + populaires*/
+.hp
+{
+  display: flex;
+  justify-content: space-between;
+  height: 40em;
+  width: 100%;
+}
+/*Contenant hebergements a Marseille*/
+.hebergement
+{
+  height: 40em;
+  width: 56em;
+  background-color: #F2F2F2;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+/*titre hebergement à marseille*/
+.hm 
+{
+  margin-left: 3em;
+  margin-top: 1.8em;
+  font-size: 1.2em;
+}
+/*contenant 3 photos 1ére rangée*/
+.rangé1
+{
+  height: 15em;
+  width: 56em;
+  background-color: brown;
+}
+/*contenant 3 photos 2éme rangée*/
+.rangé2
+{
+  height: 15em;
+  width: 56em;
+  background-color: chartreuse;
+}
+/*texte "afficher plus" */
+.afficher
+{
+  font-size: 0.9em;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+/*Contenant les plus populaires*/
+.populaires
+{
+  height: 40em;
+  width: 30em;
+  background-color: #F2F2F2;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+      /*SECTION ACTIVITES_START*/
 .activites
 {
   width: 100%;
   height: 35em;
 }
 /*contenant des 4 div*/
-.activités
+.marseille
 {
   display: flex;
   justify-content: space-between;

@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/46f67fcabd.js" crossorigin="anonymous"></script>
         <title>maquette reservia</title>
     </head>
 
@@ -33,18 +34,19 @@
              <h2>En plein centre ville ou en pleine nature</h2>
               <form>
                 <div class="recherche">
-                 <input type="text" id="barre" name="ville" placeholder="Marseille,France">
+                 <div class="icon"><i class="fas fa-map-marker-alt"></i></div>   
+                 <div class="search"><input type="search" id="barre" name="ville" placeholder="Marseille,France"></div>
                  <button class="rechercher" type="button">Rechercher</button>
                 </div>
               </form>
-              <ul class="ul2">
-                  <li class="li2">Filtres</li>
-                  <li class="li3">Économique</li>
-                  <li class="li3">Familial</li>
-                  <li class="li3">Romantique</li>
-                  <li class="li3">Animaux autorisés</li>
-              </ul>
-              <p class="information">Plus de 500 logements sont disponibles dans cette ville</p>
+              <div class="categories">
+                  <p>Filtres</p>
+                  <p><i class="fas fa-money-bill-wave"></i>Économique</p>
+                  <p><i class="fas fa-child"></i>Familial</p>
+                  <p><i class="fas fa-heart"></i>Romantique</p>
+                  <p><i class="fas fa-dog"></i> autorisés</p>
+              </div>
+              <p class="information"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
           </section>
          <!--section_hebegerments-->
           <section class="hp">

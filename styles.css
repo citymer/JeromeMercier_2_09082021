@@ -20,13 +20,13 @@ header
     color: #0065FC;
 }
 
-ul
+.ul1
 {
   display: flex;
   justify-content:space-between;
 }
 
-li
+.li1
 {
   list-style: none;
   margin-left: 90px;
@@ -53,6 +53,7 @@ h1
 {
    margin-top: 2em;
    font-size: 1.3em;
+   margin-bottom: 0.2em;
 }
 
 h2
@@ -62,43 +63,39 @@ h2
 }
 
 /*barre de recherche*/
-
-form
-{
-  width: 30em;
-  height:auto;
-}
-
 .recherche
 {
+  width: 30em;
+  height: auto;
   display: flex;
-  justify-content: flex-start;
-  margin-left: 1em;
+  border-color: #F2F2F2;
 }
-
-
-
+.icon
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  background-color: #F2F2F2;
+  border-radius: 1em 0em 0em 1em;
+}
+.search
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #F2F2F2;
+}
 #barre
 {
-  padding: 1em;
-  padding-left: 4em;
-  padding-right: 3em;
-  border: 1px solid #DEEBFF;
-  border-radius: 1em 0em 0em 1em;
-  margin-left: -1em;
-  outline: none;
-  background-size:0.8em;
-  background-image: url('map-marker-alt-solid.svg');
-  background-repeat: no-repeat;
-  background-position: 1em 0.8em;
-  background-size: 1.2em;
-  
+  border: none;
 }
 ::placeholder
 {
   font-weight: bold;
   color: black;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  padding-left: 1em;
 }
 /*bouton  bleu rechercher*/
 .rechercher
@@ -113,6 +110,16 @@ form
   text-decoration: none;
   font-weight: bold;
   border-radius:0em 1em 1em 0em;
+  cursor: pointer;
+}
+.categories
+{
+  display: flex;
+}
+.fa-info
+{
+  font-size: 0.8em;
+  color: #0065FC;
 }
 /*SECTION HEBERGEMENTS_START*/
 /*Contenant hébergements + populaires*/
@@ -126,7 +133,7 @@ form
 /*Contenant hebergements a Marseille*/
 .hebergement
 {
-  height: 40em;
+  height: 39em;
   width: 56em;
   background-color: #F2F2F2;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
@@ -134,38 +141,79 @@ form
 /*titre hebergement à marseille*/
 .hm 
 {
-  margin-left: 3em;
+  margin-left: 1.8em;
   margin-top: 1.8em;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 /*contenant 3 photos 1ére rangée*/
 .rangé1
 {
-  height: 15em;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 14em;
   width: 56em;
-  background-color: brown;
+}
+/*contenant photos(1ére rangée) avec textes & étoiles*/
+.hotelr1
+{
+  height: 12em;
+  width: 15.5em;
+  background-color: white;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
 }
 /*contenant 3 photos 2éme rangée*/
 .rangé2
 {
-  height: 15em;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 14em;
   width: 56em;
-  background-color: chartreuse;
+}
+.hotelr2
+{
+  height: 12em;
+  width: 15.5em;
+  background-color: white;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
 }
 /*texte "afficher plus" */
 .afficher
 {
-  font-size: 0.9em;
-  margin-left: 3em;
-  margin-top: 2em;
+  font-size: 1em;
+  margin-left: 2em;
+  margin-top: 1.4em;
+  font-weight: bold;
 }
 /*Contenant les plus populaires*/
 .populaires
 {
-  height: 40em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 39em;
   width: 30em;
   background-color: #F2F2F2;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+/*texte "les plus populaires*/
+.popu
+{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: -10em;
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+}
+.hotelr3
+{
+  height: 8.8em;
+  width: 25em;
+  background-color: white;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  margin-top: 1.9em;
 }
       /*SECTION ACTIVITES_START*/
 .activites
@@ -196,6 +244,7 @@ form
   width: 29em;
   float:right;
   border:transparent;
+  object-fit: cover;
 }
 h4
 {
@@ -228,6 +277,7 @@ h4
   width: 19em;
   border-radius: 1.5em 1.5em 0em 0em;
   float: right;
+  object-fit: cover;
 }
 /*contenant frioul*/
 .frioul
@@ -245,6 +295,7 @@ h4
   width: 19em;
   float: right;
   border-radius: 1.5em 1.5em 0em 0em;
+  object-fit: cover;
 }
 /*contenant parc des calanques*/
 .parc
@@ -263,6 +314,7 @@ h4
   width: 30em;
   float: right;
   border: transparent;
+  object-fit: cover;
 }
 /*contenant notre dame et longchamp*/
 .notre_parc
@@ -290,6 +342,7 @@ h4
   width: 19em;
   float: right;
   border-radius: 1.5em 1.5em 0em 0em;
+  object-fit: cover;
 }
 /*contenant parc longchamp*/
 .parc_longchamp
@@ -307,6 +360,7 @@ h4
   width: 19em;
   float: right;
   border-radius: 1.5em 1.5em 0em 0em;
+  object-fit: cover;
 }
 /*FOOTER_START*/
 footer

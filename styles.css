@@ -112,7 +112,114 @@ h2
   border-radius:0em 1em 1em 0em;
   cursor: pointer;
 }
+/*ligne filtres*/
 .categories
+{
+  width: 55em;
+  height: 5em;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.filtres
+{
+  width: 3em;
+  height: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h5
+{
+  font-size: 1em;
+}
+h6
+{
+  font-size: 1em;
+  margin-left: 1em;
+
+}
+.économique 
+{
+  display: flex;
+  align-items: center;
+  height: 2.2em;
+  width: 10em;
+  border: 0.1em solid #F2F2F2;
+  border-radius: 1.5em;
+}
+.billet 
+{
+  height: 2.3em;
+  width: 2.3em;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #0065FC;
+  background-color: #F2F2F2;
+  border-radius: 2em;
+}
+.familial
+{
+  display: flex;
+  align-items: center;
+  height: 2.2em;
+  width: 9em;
+  border: 0.1em solid #F2F2F2;
+  border-radius: 1.5em;
+}
+.enfant
+{
+  height: 2.3em;
+  width: 2.3em;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #0065FC;
+  background-color: #F2F2F2;
+  border-radius: 2em;
+}
+.romantique
+{
+  display: flex;
+  align-items: center;
+  height: 2.2em;
+  width: 10em;
+  border: 0.1em solid #F2F2F2;
+  border-radius: 1.5em;
+}
+.coeur
+{
+  height: 2.3em;
+  width: 2.3em;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #0065FC;
+  background-color: #F2F2F2;
+  border-radius: 2em;
+}
+.animaux
+{
+  display: flex;
+  align-items: center;
+  height: 2.2em;
+  width: 13em;
+  border: 0.1em solid #F2F2F2;
+  border-radius: 1.5em;
+}
+.chien
+{
+  height: 2.3em;
+  width: 2.3em;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #0065FC;
+  background-color: #F2F2F2;
+  border-radius: 2em;
+}
+.information
 {
   display: flex;
 }
@@ -121,6 +228,7 @@ h2
   font-size: 0.8em;
   color: #0065FC;
 }
+
 /*SECTION HEBERGEMENTS_START*/
 /*Contenant hébergements + populaires*/
 .hp

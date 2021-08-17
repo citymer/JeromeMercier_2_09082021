@@ -247,6 +247,7 @@ h6
 {
   display: flex;
   justify-content: space-between;
+  padding-top: 1.8em;
   height: 40em;
   width: 100%;
 }
@@ -276,12 +277,37 @@ h6
   width: 56em;
 }
 /*contenant photos(1ére rangée) avec textes & étoiles*/
-.hotelr1
+.hotelr1,.hotelr2
 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 12em;
   width: 15.5em;
   background-color: white;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+.img1,.img2,.img3,.img4,.img5,.img6
+{
+  height: 6.6em;
+  width: 14.7em;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+.auberge1,.hduport,.mouettes,.hmer,.panier,.amina
+{
+  height: 6.6em;
+  width: 14.7em;
+  border-radius: 1.5em 1.5em 0em 0em;
+  float:right;
+  border:transparent;
+  object-fit: cover;
+}
+.note1,.note2,.note3,.note4,.note5,.note6
+{
+  height: 4.5em;
+  width: 14.5em;
+  border-radius: 0em 0em 1.5em 1.5em;
 }
 /*contenant 3 photos 2éme rangée*/
 .rangé2
@@ -291,13 +317,6 @@ h6
   align-items: center;
   height: 14em;
   width: 56em;
-}
-.hotelr2
-{
-  height: 12em;
-  width: 15.5em;
-  background-color: white;
-  border-radius: 1.5em 1.5em 1.5em 1.5em;
 }
 /*texte "afficher plus" */
 .afficher
@@ -341,6 +360,10 @@ h6
   width: 100%;
   height: 35em;
 }
+.titre
+{
+  margin-bottom: 1.2em;
+}
 /*contenant des 4 div*/
 .marseille
 {
@@ -355,7 +378,7 @@ h6
   border:transparent;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
-  overflow: auto;
+  overflow:auto;
 }
 /*img_vieux_port*/
 .vieuxport
@@ -393,11 +416,35 @@ h4
 /*img_fort pomegues*/
 .fort
 {
-  height: 11.5em;
+  height: 11em;
   width: 19em;
   border-radius: 1.5em 1.5em 0em 0em;
   float: right;
   object-fit: cover;
+}
+.ph1, .ph2, .ph3, .ph4
+{
+  font-size: 1em;
+  font-weight: bold;
+}
+.ph1,.ph2,.ph3,.ph4
+{
+  padding-left: 2em;
+}
+.ph1
+{
+  padding-top: 11.5em;
+}
+.ph2
+{
+  padding-top: 7.3em;
+}
+.ph3{
+  padding-top: 8.5em;
+}
+.ph4
+{
+  padding-top: 10.3em;
 }
 /*contenant frioul*/
 .frioul

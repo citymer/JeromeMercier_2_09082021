@@ -1,4 +1,4 @@
-/*police*/
+
 html
 {
   font-family : 'Raleway', sans-serif;
@@ -139,7 +139,7 @@ h6
   margin-left: 1em;
 
 }
-.économique 
+.economique 
 {
   display: flex;
   align-items: center;
@@ -259,7 +259,7 @@ h6
   background-color: #F2F2F2;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 }
-/*titre hebergement à marseille*/
+/*titre "hebergement à marseille"*/
 .hm 
 {
   margin-left: 1.8em;
@@ -267,8 +267,8 @@ h6
   font-size: 1.3em;
   font-weight: bold;
 }
-/*contenant 3 photos 1ére rangée*/
-.rangé1
+/*contenant 3 photos 1ére & 2éme rangée*/
+.range1,.range2
 {
   display: flex;
   justify-content:space-evenly;
@@ -276,7 +276,7 @@ h6
   height: 14em;
   width: 56em;
 }
-/*contenant photos(1ére rangée) avec textes & étoiles*/
+/*2 Div contenants 3 photos (1ére & 2éme rangée) avec textes & étoiles*/
 .hotelr1,.hotelr2
 {
   display: flex;
@@ -288,35 +288,73 @@ h6
   background-color: white;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 }
+/*contenant des photos*/
 .img1,.img2,.img3,.img4,.img5,.img6
 {
   height: 6.6em;
   width: 14.7em;
-  border-radius: 1.5em 1.5em 0em 0em;
+  border-radius: 1.4em 1.4em 0em 0em;
 }
 .auberge1,.hduport,.mouettes,.hmer,.panier,.amina
 {
   height: 6.6em;
   width: 14.7em;
-  border-radius: 1.5em 1.5em 0em 0em;
+  border-radius: 1.4em 1.4em 0em 0em;
   float:right;
   border:transparent;
   object-fit: cover;
 }
+/*contenant texte en dessous des photos*/
 .note1,.note2,.note3,.note4,.note5,.note6
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 4.5em;
   width: 14.5em;
   border-radius: 0em 0em 1.5em 1.5em;
 }
-/*contenant 3 photos 2éme rangée*/
-.rangé2
+/*contenant titre*/
+.ti 
+{
+  height: 1em;
+  font-size: 1em;
+  font-weight: bold;
+}
+/*contenant nuit a partir de*/
+.sou
+{
+  height: 1em;
+  font-size: 0.9em;
+}
+/*contenant des étoiles*/
+.etoiles
 {
   display: flex;
-  justify-content:space-evenly;
-  align-items: center;
-  height: 14em;
-  width: 56em;
+  align-items: flex-start;
+  height: 1em;
+  width: 14em;
+  font-size: 0.8em;
+}
+.ti,.sou,.etoiles
+{
+  padding-left: 0.5em;
+}
+/*étoiles bleu*/
+.bleus
+{
+  display: flex;
+  height: 1em;
+  width: 1em;
+  color: #0065FC;
+}
+/*étoiles grises*/
+.gris 
+{
+  display: flex;
+  height: 1em;
+  width: 1em;
+  color: gray;
 }
 /*texte "afficher plus" */
 .afficher
@@ -346,13 +384,39 @@ h6
   margin-top: 1.8em;
   margin-bottom: 0.5em;
 }
+/*contenant photo et textes x3*/
 .hotelr3
 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 8.8em;
   width: 25em;
   background-color: white;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   margin-top: 1.9em;
+}
+.img7,.img8,.img9
+{
+  height: 8em;
+  width: 12em;
+  border-radius: 1.4em 0em 0em 1.4em;
+  background-color: #0065FC;
+}
+.soleil,.aucoeur,.bleu
+{
+  height: 8em;
+  width: 12em;
+  border-radius: 1.4em 0em 0em 1.4em;
+  float:left;
+  border:transparent;
+  object-fit: cover;
+}
+.note7,.note8,.note9
+{
+  height: 8em;
+  width: 12em;
+  border-radius: 0em 1.5em 1.5em 0em;
 }
       /*SECTION ACTIVITES_START*/
 .activites

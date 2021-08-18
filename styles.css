@@ -315,7 +315,7 @@ h6
   border-radius: 0em 0em 1.5em 1.5em;
 }
 /*contenant titre*/
-.ti 
+.ti
 {
   height: 1em;
   font-size: 1em;
@@ -328,7 +328,7 @@ h6
   font-size: 0.9em;
 }
 /*contenant des étoiles*/
-.etoiles
+.etoiles,.etoilespopu
 {
   display: flex;
   align-items: flex-start;
@@ -340,6 +340,25 @@ h6
 {
   padding-left: 0.5em;
 }
+.tit
+{
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 0.6em;
+}
+.sout
+{
+  font-size: 0.9em;
+  padding-top: 0.8em;
+}
+.etoilespopu
+{
+  padding-top: 2.5em;
+}
+.tit,.sout,.etoilespopu
+{
+  padding-left: 0.9em;
+}
 /*étoiles bleu*/
 .bleus
 {
@@ -347,6 +366,7 @@ h6
   height: 1em;
   width: 1em;
   color: #0065FC;
+  padding-left: 0.2em;
 }
 /*étoiles grises*/
 .gris 

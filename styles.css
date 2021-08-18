@@ -276,7 +276,7 @@ h6
   height: 14em;
   width: 56em;
 }
-/*2 Div contenants 3 photos (1ére & 2éme rangée) avec textes & étoiles*/
+/*contenants individuels des photos avec textes & étoiles dans "hébergements à marseille"*/
 .hotelr1,.hotelr2
 {
   display: flex;
@@ -287,6 +287,7 @@ h6
   width: 15.5em;
   background-color: white;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
+  cursor: pointer;
 }
 /*contenant des photos*/
 .img1,.img2,.img3,.img4,.img5,.img6
@@ -403,7 +404,7 @@ h6
   font-size: 1.3em;
   font-weight: bold;
   margin-left: -19em;
-  margin-top: 1.7em;
+  margin-top: 1.8em;
   margin-bottom: 0.5em;
 }
 /*petit graphique*/
@@ -425,7 +426,8 @@ h6
   width: 25em;
   background-color: white;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
-  margin-top: 1.8em;
+  margin-top: 1.5em;
+  cursor: pointer;
 }
 .img7,.img8,.img9
 {

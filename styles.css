@@ -36,6 +36,16 @@ header
 {
   font-size: 1.2em;
 }
+a
+{
+  text-decoration: none;
+  color: black;
+}
+header ul li a:hover {
+  border-top: 0.2em solid #0065fc;
+  padding-top: 2.3em;
+  color: #0065fc;
+}
 .lien .inscrire
 {
   font-size: 1em;
@@ -89,6 +99,11 @@ h2
 #barre
 {
   border: none;
+}
+input:focus
+{
+  outline: transparent;
+  margin-left: auto;
 }
 ::placeholder
 {
@@ -267,7 +282,7 @@ h6:hover
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 }
 /*titre "hebergement à marseille"*/
-.hm 
+#hm 
 {
   margin-left: 1.8em;
   margin-top: 1.8em;
@@ -465,7 +480,7 @@ h6:hover
   width: 100%;
   height: 35em;
 }
-.titre
+#titre
 {
   margin-bottom: 1.2em;
 }

@@ -1,4 +1,3 @@
-
 html
 {
   font-family : 'Raleway', sans-serif;
@@ -19,7 +18,6 @@ header
     max-height: 45px;
     color: #0065FC;
 }
-
 .ul1
 {
   display: flex;
@@ -30,11 +28,6 @@ header
 {
   list-style: none;
   margin-left: 90px;
-}
-/*logo*/
-.reservia
-{
-  font-size: 1.2em;
 }
 a
 {
@@ -276,7 +269,7 @@ h6:hover
   justify-content: space-between;
   padding-top: 1.8em;
   height: 40em;
-  width: 100%;
+  width: 90em;
 }
 /*Contenant hebergements a Marseille*/
 .hebergement
@@ -439,7 +432,6 @@ h6:hover
 /*petit graphique*/
 .fa-chart-line
 {
-
   height: 1.2em;
   width: 1.2em;
   font-size: 1.2em;
@@ -482,7 +474,6 @@ h6:hover
       /*SECTION ACTIVITES_START*/
 .activites
 {
-  width: 100%;
   height: 35em;
 }
 #titre
@@ -658,7 +649,6 @@ h4
 footer
 {
   display: flex;
-  width: 100%;
   height: 14em;
   background-color:#F2F2F2;
 }
@@ -683,3 +673,97 @@ h3
 {
   font-size: 1.3em;
 }
+
+
+@media (max-width: 1024px)
+  {
+    html
+    {
+       font-family : 'Raleway', sans-serif;
+       width: 95%;
+    }
+    header
+    {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      width: auto;
+    }
+    #logo /*reservia*/
+    {
+      max-height: 10em;
+      width: auto;
+    }
+    .ul1
+    {
+       display: flex;
+       width: auto;
+       font-size: 2.9em;
+       padding: 0em;
+    }
+    .li1 
+    {
+      margin: 1em;
+    }
+    header ul li a:hover 
+    {
+      border-bottom: 0.2em solid #0065fc;
+      padding-bottom: 1em;
+      border-top: none;
+      color: #0065fc;
+    }
+    .section /*section trouver avec zone de recherche et filtres*/
+    {
+      width: auto;
+      height: 90em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 
+    {
+      font-size: 3.5em;
+    }
+    h2 
+    {
+      font-size: 2.2em;
+    }
+    .categories
+    {
+      display: grid;
+      height: auto;
+      width: auto;
+    }
+    .range1
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 40em;
+      width: auto;
+    }
+    .range2
+    {
+      display: flex;
+      flex-direction: column;
+      height: 40em;
+      width: auto;
+    }
+    .sectionhebergement
+    {
+      display: flex;
+      flex-direction: column-reverse;
+      width: auto;
+      height: 120em;
+    }
+    .hebergement
+    {
+      height: 100em;
+      width: auto;
+    }
+    .populaires
+    {
+      width: auto;
+    }
+  }

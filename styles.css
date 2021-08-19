@@ -75,8 +75,8 @@ h2
 /*barre de recherche*/
 .recherche
 {
-  width: 30em;
-  height: auto;
+  width: 32em;
+  height: 3em;
   display: flex;
   border-color: #F2F2F2;
 }
@@ -88,6 +88,11 @@ h2
   width: 2.5em;
   background-color: #F2F2F2;
   border-radius: 1em 0em 0em 1em;
+}
+input
+{
+  font-family: 'raleway', sans-serif;
+  margin-left: 2em;
 }
 .search
 {
@@ -103,24 +108,24 @@ h2
 input:focus
 {
   outline: transparent;
-  margin-left: auto;
 }
 ::placeholder
 {
   font-weight: bold;
   color: black;
   font-size: 1.2em;
-  padding-left: 1em;
 }
 /*bouton  bleu rechercher*/
+button
+{
+  height: 3.6em;
+  width: 9em;
+}
 .rechercher
 {
   background-color: #0065FC;
   border: none;
   color: white;
-  padding: 1em;
-  padding-inline: 2.5em;
-  margin-left: -1em;
   text-align: center;
   text-decoration: none;
   font-weight: bold;

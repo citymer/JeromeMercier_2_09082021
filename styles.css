@@ -250,7 +250,7 @@ h6:hover
 
 /*SECTION HEBERGEMENTS_START*/
 /*Contenant hébergements + populaires*/
-.hp
+.sectionhebergement
 {
   display: flex;
   justify-content: space-between;
@@ -408,17 +408,18 @@ h6:hover
 {
   display: flex;
   justify-content: space-between;
+  height: 2em;
+  width: 18em;
   font-size: 1.3em;
   font-weight: bold;
-  margin-left: -19em;
+  margin-left: 0em;
   margin-top: 1.8em;
   margin-bottom: 0.5em;
 }
 /*petit graphique*/
 .fa-chart-line
 {
-  margin-right: -16em;
-  padding-top: -15em;
+
   height: 1.2em;
   width: 1.2em;
   font-size: 1.2em;

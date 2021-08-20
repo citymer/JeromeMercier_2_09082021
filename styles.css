@@ -454,7 +454,6 @@ h6:hover
   height: 8em;
   width: 12em;
   border-radius: 1.4em 0em 0em 1.4em;
-  background-color: #0065FC;
 }
 .soleil,.aucoeur,.bleu
 {
@@ -673,7 +672,7 @@ h3
 {
   font-size: 1.3em;
 }
-
+/*      RESPONSIVE     */
 
 @media (max-width: 1024px)
   {
@@ -713,7 +712,8 @@ h3
       border-top: none;
       color: #0065fc;
     }
-    .section /*section trouver avec zone de recherche et filtres*/
+/* SECTION TROUVER AVEC ZONE DE RECHERCHE ET FILTRES */    
+    .section 
     {
       width: auto;
       height: 90em;
@@ -729,11 +729,133 @@ h3
     {
       font-size: 2.2em;
     }
+    /*CONTENANT DES FILTRES*/
     .categories
     {
       display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:  1fr 1fr;
+      grid-template-areas:
+      "filtres filtres"
+      "economique familial"
+      "romantique animaux";
       height: auto;
       width: auto;
+    }
+    .filtres
+    {
+      height: 2em;
+      margin-left: 2em;
+      
+    }
+    h5 
+    {
+      grid-area: filtres;
+      font-size: 2em;
+    }
+    h6 
+    {
+      font-size: 2.5em;
+    }
+    .economique
+    {
+      grid-area: economique;
+    }
+    .familial
+    {
+      grid-area: familial;
+    }
+    .romantique
+    {
+      grid-area: romantique;
+    }
+    .animaux
+    {
+      grid-area: animaux;
+    }
+    .economique,.romantique
+    {
+      height: 4.7em;
+      width: 25em;
+      border: 0.2em solid #F2F2F2;
+      border-radius: 2.3em;
+      margin-top: 2em;
+    }
+    .familial
+    {
+      height: 4.7em;
+      width: 20em;
+      border: 0.2em solid #F2F2F2;
+      border-radius: 2.3em;
+      margin-top: 2em;
+    }
+    .animaux
+    {
+      height: 5em;
+      width: 30em;
+      border: 0.2em solid #F2F2F2;
+      border-radius: 2.3em;
+      margin-top: 2em;
+    }
+    .billet,.enfant,.coeur,.chien
+    {
+      height:5.5em ;
+      width: 5.5em;
+      border-radius: 3em;
+    }
+    /*LIGNE INFORMATION*/
+    .information
+    {
+      height: 8em;
+      width: auto;
+      justify-content:flex-start;
+    }
+    .info
+    {
+      height: 2.5em;
+      width: 2.5em;
+      border: 0.2em solid #F2F2F2;
+      border-radius: 1.5em 1.5em 1.5em 1.5em;
+      font-size: 1.2em;
+    }
+    .plus 
+    {
+      font-size: 1.7em;
+      margin-left: 1em;
+    }
+/* SECTION HEBERGEMENTS */  
+    .sectionhebergement
+    {
+      display: flex;
+      flex-direction: column-reverse;
+      width: auto;
+      height: auto;
+      margin-top: 3em;
+    } 
+    /* les plus populaires*/
+    .populaires
+    {
+      width: auto;
+      height: 80em;
+      border-radius: 0em 0em 0em 0em;
+    }
+    .popu  /*texte et graphique*/
+    {
+      font-size: 2.5em;
+    } 
+    .hotelr3
+    {
+      height: 21em;
+      width: 46em;
+    } 
+    .img7,.img8,.img9,.soleil,.aucoeur,.bleu,.note7,.note8,.note9
+    {
+      height: 20em;
+      width: 22.5em;
+    }
+    .tit,.sout,.etoilespopu
+    {
+      font-size: 2em;
     }
     .range1
     {
@@ -750,20 +872,10 @@ h3
       height: 40em;
       width: auto;
     }
-    .sectionhebergement
-    {
-      display: flex;
-      flex-direction: column-reverse;
-      width: auto;
-      height: 120em;
-    }
     .hebergement
     {
       height: 100em;
       width: auto;
-    }
-    .populaires
-    {
-      width: auto;
+      margin-top: 3em;
     }
   }

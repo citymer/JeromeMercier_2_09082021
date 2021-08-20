@@ -775,26 +775,31 @@ h3
     }
     .economique,.romantique
     {
-      height: 4.7em;
+      height: 5em;
       width: 25em;
       border: 0.2em solid #F2F2F2;
-      border-radius: 2.3em;
+      border-radius: 3em 3em 3em 3em;
       margin-top: 2em;
+    }
+    .economique
+    {
+      margin-left: 2em;
     }
     .familial
     {
-      height: 4.7em;
+      height: 5em;
       width: 20em;
       border: 0.2em solid #F2F2F2;
-      border-radius: 2.3em;
+      border-radius: 3em 3em 3em 3em;
       margin-top: 2em;
+      margin-left: 1em;
     }
     .animaux
     {
       height: 5em;
-      width: 30em;
+      width: 31em;
       border: 0.2em solid #F2F2F2;
-      border-radius: 2.3em;
+      border-radius: 3em 3em 3em 3em;
       margin-top: 2em;
     }
     .billet,.enfant,.coeur,.chien
@@ -857,25 +862,94 @@ h3
     {
       font-size: 2em;
     }
-    .range1
+  /*HEBERGEMENTS A MARSEILLE*/  
+    .hebergement
+    {
+      height: 248em;
+      width: auto;
+      margin-top: 3em;
+      background-color: transparent;
+      border: 0.2em solid #F2F2F2;
+    }
+    #hm
+    {
+      font-size: 2.5em;
+      width: 12.5em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hotelr1,.hotelr2
+    {
+      height: 36em;
+      width: 46.5em;
+      box-shadow: 0.2em 0.2em 0.2em 0.2em #F2F2F2;
+      border: 0.1em solid #F2F2F2;
+    }
+    .hotelr1
+    {
+      margin-top: 1.5em;
+    }
+    .hotelr2
+    {
+      margin-top: 1em;
+    }
+    .range1,.range2
     {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 40em;
+      height: 115em;
       width: auto;
     }
-    .range2
+    .img1,.img2,.img3,.img4,.img5,.img6
+    {
+      height: 21em;
+      width: 45em;
+      border-radius: 1.4em 1.4em 0em 0em;
+    }
+    .auberge1,.hduport,.mouettes,.hmer,.panier,.amina
+    {
+      height: 21em;
+      width: 45em;
+      border-radius: 1.4em 1.4em 0em 0em;
+      float:right;
+      border:transparent;
+      object-fit: cover;
+    }
+    .note1,.note2,.note3,.note4,.note5,.note6
     {
       display: flex;
-      flex-direction: column;
-      height: 40em;
-      width: auto;
+      justify-content: space-around;
+      height: 13em;
+      width: 45em;
+      border-radius: 0em 0em 1.5em 1.5em;
     }
-    .hebergement
+    .ti,.sou,.etoiles
     {
-      height: 100em;
-      width: auto;
-      margin-top: 3em;
+      font-size: 2em;
+      margin-left: 1em;
     }
-  }
+    .afficher
+    {
+      font-size: 2em;
+      margin-left: 3em;
+    }
+  /* ACTIVITES A MARSEILLE*/
+    .activites
+    {
+      height: 140em;
+      background-color: aquamarine;
+    }
+    .marseille
+    {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    } 
+  #titre
+  {
+     width: 9.5em;
+     margin-left: auto;
+     margin-right: auto;
+  } 
+}

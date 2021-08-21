@@ -112,7 +112,7 @@ input:focus
 button
 {
   height: 3.6em;
-  width: 9em;
+  width: 7em;
 }
 .rechercher
 {
@@ -124,6 +124,16 @@ button
   font-weight: bold;
   border-radius:0em 1em 1em 0em;
   cursor: pointer;
+}
+.buttonsearch
+{
+  display: none;
+}
+.fa-search
+{
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
 }
 /*ligne filtres*/
 .categories
@@ -728,6 +738,56 @@ h3
     h2 
     {
       font-size: 2.2em;
+    }
+    /*BARRE DE RECHERCHE*/
+    .recherche
+    {
+      height: 5.92em;
+      width: 60em;
+      display: flex;
+
+    }
+    .icon
+    {
+      height: 6em;
+      width: 6em;
+      border-radius: 3em 0em 0em 3em;
+    }
+    .fa-map-marker-alt
+    {
+      font-size: 2.5em;
+    }
+    #barre
+    {
+      height: 3em;
+      width: 22em;
+      font-size: 1.9em;
+    }
+    ::placeholder
+    {
+      height: 4em;
+      width: 55em;
+    }
+    .buttonsearch
+    {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 7em;
+       width: 9em;
+       background-color: #0065FC;
+       border: none;
+       text-decoration: none;
+       border-radius:0em 3.5em 3.5em 0em;
+       cursor: pointer;
+    }
+    .fa-search
+    {
+      font-size: 3em;
+    }
+    .rechercher
+    {
+      display: none;
     }
     /*CONTENANT DES FILTRES*/
     .categories

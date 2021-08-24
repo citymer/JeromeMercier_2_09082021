@@ -8,46 +8,56 @@ html
 /*HEADER_START*/
 header
 {
-    height: 3em;
+    height: 5em;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 #logo
 {
-    width:auto;
-    max-height: 45px;
-    color: #0065FC;
+  display: flex;
+  width:auto;
+  height: 3.5em;
+  color: #0065FC;
+  margin-top: 2em;
 }
-.ul1
+nav
 {
   display: flex;
+  align-items: flex-end;
   justify-content:space-between;
-}
-
-.li1
-{
-  list-style: none;
-  margin-left: 90px;
+  width: 19em;
+  height: 5em;
+  margin-left: 53em;
 }
 a
 {
+  display: flex;
+  width: 7em;
   text-decoration: none;
   color: black;
 }
-header ul li a:hover {
-  border-top: 0.2em solid #0065fc;
-  padding-top: 2.3em;
-  color: #0065fc;
-}
-.lien ,.inscrire,.lien2
-{
-  font-size: 1em;
-}
-
 .inscrire
 {
-  color:#0065FC;
+  display: flex;
+  align-items: flex-end;
+  width: 7em;
+  height: 5em;
+  color: #0065FC;
   font-weight: bold;
+}
+.reservia,.inscrire
+{
+  display: flex;
+  justify-content: space-between;
+}
+.lien2
+{
+  margin-right: 1em;
+}
+nav a:hover {
+  border-top: 0.2em solid #0065fc;
+  padding-top: 3em;
+  color: #0065fc;
 }
 /*HEADER_END*/
 /*SECTION TROUVER*/
@@ -693,34 +703,67 @@ h3
     }
     header
     {
-      display:flex;
-      align-items: center;
-      flex-direction: column;
-      height: auto;
-      width: auto;
+      display: grid;
+      grid-template-columns: 50% 1fr;
+      grid-template-rows: 60% 1fr;
+      height: 18em;
+    }
+    .reservia
+    {
+      width: 8em;
+      height: 6em;
     }
     #logo /*reservia*/
     {
-      max-height: 8em;
+      height: 7em;
       width: auto;
     }
-    .ul1
+    nav
     {
-       display: flex;
-       width: auto;
-       font-size: 2.9em;
-       padding: 0em;
+      margin-left: 0em;
+      width: 58em;
+      height: 7.2em;
     }
-    .li1 
+    .lien
     {
-      margin: 1em;
+      height: 3em;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      width: 12.1em;
+      font-size: 2.4em;
     }
-    header ul li a:hover 
+    .lien2
+    {
+      height: 3em;
+      grid-column-start: 2;
+      grid-row-start: 2;
+      width:12.1em;
+      font-size: 2.4em;
+      margin-right: 0em;
+    }
+    .lien,.lien2
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav a:hover 
     {
       border-bottom: 0.2em solid #0065fc;
-      padding-bottom: 1em;
       border-top: none;
+      padding-bottom: 0.1em;
       color: #0065fc;
+    }
+    .inscrire
+    {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      padding-left: 2em;
+      height: 2em;
+      font-size: 2em;
+      margin-top: 1em;
+      margin-left: 7em;
+      width: 5em;
     }
 /* SECTION TROUVER AVEC ZONE DE RECHERCHE ET FILTRES */    
     .section 
@@ -737,6 +780,7 @@ h3
     }
     .trouver
     {
+      padding-top: 1em;
       margin-top: 0em;
     }
     h2 
@@ -747,7 +791,7 @@ h3
     .recherche
     {
       height: 5.92em;
-      width: 60em;
+      width: 58em;
       display: flex;
 
     }
@@ -764,7 +808,7 @@ h3
     #barre
     {
       height: 3em;
-      width: 22em;
+      width: 21em;
       font-size: 1.9em;
     }
     ::placeholder
@@ -778,7 +822,7 @@ h3
        align-items: center;
        justify-content: center;
        height: 7em;
-       width: 9em;
+       width: 8em;
        background-color: #0065FC;
        border: none;
        text-decoration: none;

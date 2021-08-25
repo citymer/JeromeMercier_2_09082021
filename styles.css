@@ -514,6 +514,7 @@ h6:hover
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
   overflow:auto;
+  cursor: pointer;
 }
 /*img_vieux_port*/
 .vieuxport
@@ -547,6 +548,7 @@ h4
   border: transparent;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+  cursor: pointer;
 }
 /*img_fort pomegues*/
 .fort
@@ -587,6 +589,7 @@ h4
   border: transparent;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+  cursor: pointer;
 }
 /*img_iles de frioul*/
 .iles
@@ -606,6 +609,7 @@ h4
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
   overflow: auto;
+  cursor: pointer;
 }
 /*img_parc*/
 .parc_nationnal
@@ -634,6 +638,7 @@ h4
   border: transparent;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2; 
+  cursor: pointer;
 }
 /*img_notre dame*/
 .dame
@@ -645,13 +650,14 @@ h4
   object-fit: cover;
 }
 /*contenant parc longchamp*/
-.divparc_longchamp
+.parc_longchamp
 {
   height: 14em;
   width: 19em;
   border: transparent;
   border-radius: 1.5em 1.5em 1.5em 1.5em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
+  cursor: pointer;
 }
 /*img_parc longchamp*/
 .longchamp

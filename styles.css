@@ -1161,6 +1161,7 @@ h3
       flex-direction: column;
       align-items: center;
       box-shadow:0.1em 0.2em 0.2em 0.1em #F2F2F2;
+      margin-left: 0em;
     }
   /* textes sous images */
     h4,.nomimg3,.nomimg2,.nomimg1,.nomimg4
@@ -1180,7 +1181,7 @@ h3
     .divfort_iles,.divnotre_parc
     {
       height: 74em;
-      width: auto;
+      width: 38em;
     }
    /*FOOTER*/
     footer
@@ -1607,9 +1608,9 @@ h3
   #titre
  {
    width: 9.5em;
-   margin-left: auto;
+   margin-left: 0.5em;
    margin-right: auto;
-   font-size: 2em;
+   font-size: 1.8em;
    margin-top: 0.5em;
   } 
   /* contenant images & textes */

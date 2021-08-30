@@ -50,6 +50,10 @@ a
   display: flex;
   justify-content: space-between;
 }
+.divinscrire
+{
+  cursor: pointer;
+}
 .lienactivites
 {
   margin-right: 1em;
@@ -699,7 +703,7 @@ h3
   font-size: 1.3em;
 }
 /*       ---------            RESPONSIVE        -------------------  */
-@media (max-width:1439px) 
+@media screen and (max-width:1439px) 
 {
   html
   {
@@ -757,7 +761,7 @@ h3
   
 }
 
-@media (min-width:640px) and (max-width:965px) 
+@media screen and (max-width:965px) 
 {
     html
     {
@@ -1216,18 +1220,18 @@ h3
       margin-top: 0.1em;
     }
 }
-@media (min-width:375px) and (max-width:639px)
+@media screen and (max-width:639px)
 {
   html
   {
      font-family : 'Raleway', sans-serif;
-     width: 23.4em;
+     width: 360px;
      margin-left: auto;
-     margin-right: auto;
-  }
+     margin-left: auto;
+    }
   body
   {
-    width: 23.4em;
+    width: 19em;
   }
 
   header
@@ -1236,7 +1240,8 @@ h3
     grid-template-columns: 50% 1fr;
     grid-template-rows: 50% 1fr;
     height: 16em;
-    width: 23.4em;
+    width: 19em;
+    margin-left: 1.5em;
   }
   .divreservia
   {
@@ -1251,31 +1256,28 @@ h3
   nav
   {
     margin-left: 0em;
-    width: 23.4em;
+    width: 19em;
     height: 7.2em;
   }
   .lienhebergements
   {
-    height: 4em;
     grid-column-start: 1;
     grid-row-start: 1;
-    width: 8.5em;
-    font-size: 1.7em;
   }
   .lienactivites
   {
-    height: 4em;
     grid-column-start: 2;
     grid-row-start: 2;
-    width:8.5em;
-    font-size: 1.7em;
-    margin-right: 0.8em;
+    margin-right: 0.5em;
   }
   .lienhebergements,.lienactivites
   {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 4em;
+    width: 8.5em;
+    font-size: 1.6em;
 
   }
   nav a:hover 
@@ -1296,10 +1298,14 @@ h3
     margin-left: 2.2em;
     width: 5em;
   }
+  main 
+  {
+    margin-left: 1.5em;
+  }
 /*                     SECTION TROUVER AVEC ZONE DE RECHERCHE ET FILTRES                   */    
   .section 
   {
-    width: 23.4em;
+    width: 19em;
     height: 40em;
     display: flex;
     flex-direction: column;
@@ -1307,30 +1313,30 @@ h3
   }
   .texttrouver
   {
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding-top: 0.8em;
     margin-top: 0em;
   }
   h2 
   {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   /*BARRE DE RECHERCHE*/
   .divrecherche  /* contenant de la barre recherche */
   {
     height: 3.9em;
-    width: 23.2em;
+    width: 19em;
     display: flex;
 
   }
   .search
   {
     height: 4em;
-    width: 17em;
+    width: 14em;
   }
   form 
   {
-    width: 23.4em;
+    width: 19em;
   }
   .icon
   {
@@ -1345,15 +1351,15 @@ h3
   #barre
   {
     height: 2em;
-    width: 9em;
+    width: 8em;
     font-size: 1.9em;
-    margin-left: 0.3em;
+    margin-left: 0.4em;
   }
   ::placeholder
   {
     height: 4em;
     width: 9em;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .buttonsearch
   {
@@ -1380,7 +1386,7 @@ h3
   .divoffiltres
   {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 50% 1fr;
     grid-template-rows:  1fr 1fr 1fr;
     grid-template-areas:
     "filtres filtres"
@@ -1388,7 +1394,7 @@ h3
     "romantique romantiques"
     "animaux animaux";
     height: auto;
-    width: 23.4em;
+    width: 19em;
   }
   .divtextfiltres
   {
@@ -1399,26 +1405,26 @@ h3
   h5 
   {
     grid-area: filtres;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   h6 /*texte a l'interieur des filtres*/
   {
-    font-size: 1.1em;
+    font-size: 0.9em;
     margin-left: 0.3em;
   }
   .diveconomique
   {
     grid-area: economique;
+    width: 10em;
   }
   .divromantique
   {
     grid-area: romantique;
-    width: 10em;
+    width: 13em;
   }
   .diveconomique,.divromantique
   {
-    height: 4em;
-    width: 12em;
+    height: 3.6em;
     border: 0.2em solid #F2F2F2;
     border-radius: 3em 3em 3em 3em;
     margin-top: 1em;
@@ -1426,92 +1432,96 @@ h3
   .divfamilial
   {
     grid-area: familial;
-    height: 4em;
-    width: 9.5em;
+    height: 3.6em;
+    width: 7.8em;
     border: 0.2em solid #F2F2F2;
     border-radius: 3em 3em 3em 3em;
     margin-top: 1em;
-    margin-right: 1.5em;
+    margin-left: 1.4em;
+    margin-right: 0em;
   }
   .divanimaux
   {
     grid-area: animaux;
-    height: 4em;
-    width: 18em;
+    height: 3.6em;
+    width: 14em;
     border: 0.2em solid #F2F2F2;
     border-radius: 3em 3em 3em 3em;
     margin-top: 1em;
   }
   .divbillet,.divenfant,.divcoeur,.divchien
   {
-    height:4.5em ;
-    width: 4.5em;
-    border-radius: 3em;
+    height:4em ;
+    width: 4em;
+    border-radius: 2.5em;
   }
   /*logo filtres*/
   .fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog
   {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   /*LIGNE INFORMATION*/
   .divinformation
   {
     height: 5em;
-    width: 23.4em;
+    width: 19em;
   }
   .diviconinfo
   {
-    height:2.2em;
-    width: 2.2em;
+    height:2em;
+    width: 2em;
     border: 0.2em solid #F2F2F2;
     border-radius: 2em 2em 2em 2em;
     font-size: 0.8em;
-    width: 3em;
+    width: 2em;
   }
   .textplus 
   {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-left: 0.3em;
+    width: 19em;
   }
 /*                           SECTION HEBERGEMENTS                           */  
   .sectionhebergement
   {
     display: flex;
     flex-direction: column-reverse;
-    width: 23.4em;
+    width: 19em;
     height: auto;
     margin-top: 0em;
   } 
   /* LES PLUS POPULAIRES*/
   .divpluspopulaires
   {
-    width: 23.4em;
-    height: 50em;
+    width: 19em;
+    height: 46em;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 0em 0em 0em 0em;
   }
   .texticonpluspopulaires  /*texte et graphique*/
   {
-    font-size: 1.6em;
+    font-size: 1.4em;
     width: 13em;
   } 
   .hotelr3
   {
-    height: 12em;
-    width: 21em;
+    height: 11em;
+    width: 17.5em;
   } 
   .divimg7,.divimg8,.divimg9,.imgsoleil,.imgaucoeur,.imgbleu,.divtext7,.divtext8,.divtext9
   {
-    height: 11em;
-    width: 12em;
+    height: 10em;
+    width: 10em;
   }
   .divtext7,.divtext8,.divtext9
   {
-    width: 8em;
-    height: 11em;
+    width: 6.5em;
+    height: 10em;
   }
   .nomhotelpopulaires,.prixnuit,.divetoilespopulaires
   {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .divetoilespopulaires
   {
@@ -1521,14 +1531,15 @@ h3
 /*HEBERGEMENTS A MARSEILLE*/  
   .divhebergement
   {
-    height: 133em;
-    width: 23.4em;
+    height: 130em;
+    width: 19em;
     margin-top: 3em;
     background-color: transparent;
+    border: 0em transparent;
   }
   #texth1
   {
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 12.5em;
     margin-left: auto;
     margin-right: auto;
@@ -1536,10 +1547,11 @@ h3
   }
   .hotelr1,.hotelr2
   {
-    height: 18em;
-    width: 22em;
+    height: 17.5em;
+    width: 18em;
     box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
     border: 0.1em solid #F2F2F2;
+    margin-left: 0em;
   }
   .hotelr1
   {
@@ -1555,18 +1567,18 @@ h3
     flex-direction: column;
     justify-content: space-around;
     height: 60em;
-    width: 23.4em;
+    width: 19em;
   }
   .divimg1,.divimg2,.divimg3,.divimg4,.divimg5,.divimg6
   {
     height: 11em;
-    width: 21em;
+    width: 17.5em;
     border-radius: 1.4em 1.4em 0em 0em;
   }
   .auberge1,.hduport,.mouettes,.hmer,.panier,.amina
   {
     height: 11em;
-    width: 21em;
+    width: 17.5em;
     border-radius: 1.4em 1.4em 0em 0em;
     float:right;
     border:transparent;
@@ -1577,7 +1589,7 @@ h3
     display: flex;
     justify-content: space-around;
     height: 6em;
-    width: 22em;
+    width: 18em;
     border-radius: 0em 0em 1.5em 1.5em;
   }
   .nomhotel,.prix,.divetoiles
@@ -1587,7 +1599,7 @@ h3
   }
   .afficher
   {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 1em;
     margin-top: 2.5em;
   }
@@ -1595,7 +1607,7 @@ h3
   .activites /*section*/
   {
     height: 124em;
-    width: 23.4em;
+    width: 19em;
   }
   .marseille
   {
@@ -1603,21 +1615,21 @@ h3
    flex-direction: column;
    align-items: center;
    height: 114em;
-   width: 23.4em;
+   width: 19em;
   } 
   #titre
  {
    width: 9.5em;
    margin-left: 0.5em;
    margin-right: auto;
-   font-size: 1.8em;
+   font-size: 1.6em;
    margin-top: 0.5em;
   } 
   /* contenant images & textes */
   .divvieux_port,.pomegues,.frioul,.divparc,.notre_dame,.parc_longchamp
   {
     height: 17em;
-    width: 22em;
+    width: 19em;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -1635,7 +1647,7 @@ h3
   .vieuxport,.fort,.iles,.parc_nationnal,.dame,.longchamp
   {
     height: 11em;
-    width: 21em;
+    width: 18em;
     border-radius: 1.5em 1.5em 0em 0em;
     margin-top: 0.6em;
   }
@@ -1643,7 +1655,7 @@ h3
   .divfort_iles,.divnotre_parc
   {
     height: 37em;
-    width: 22em;
+    width: 19em;
   }
   .frioul,.notre_dame,.parc_longchamp,.pomegues
   {
@@ -1653,33 +1665,34 @@ h3
   footer
   {
     height: 50em;
-    width: 23.4em;
+    width: 19em;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
+    margin-left: 1.5em;
 
   }
   .apropos
   {
     height: 14em;
-    width: 21em;
+    width: 16em;
     margin-left: 1.5em;
     margin-top: 2em;
   }
   .hebergements,.assistance
   {
     height: 12em;
-    width: 21em;
+    width: 16em;
     margin-top: 1.5em;
     margin-left: 1.5em;
   }
   h3 
   {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .textefooter
   {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 0.1em;
   }
 }

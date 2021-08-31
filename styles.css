@@ -1,4 +1,5 @@
-html
+
+body
 {
   font-family : 'Raleway', sans-serif;
   margin-left: auto;
@@ -14,7 +15,6 @@ header
 }
 #logoreservia
 {
-  display: flex;
   width:auto;
   height: 3.5em;
   color: #0065FC;
@@ -31,7 +31,6 @@ nav
 }
 a
 {
-  display: flex;
   width: 7em;
   text-decoration: none;
   color: black;
@@ -44,15 +43,12 @@ a
   height: 5em;
   color: #0065FC;
   font-weight: bold;
+  cursor: pointer;
 }
 .divreservia,.divinscrire
 {
   display: flex;
   justify-content: space-between;
-}
-.divinscrire
-{
-  cursor: pointer;
 }
 .lienactivites
 {
@@ -65,29 +61,25 @@ nav a:hover {
 }
 /*HEADER_END*/
 /*SECTION TROUVER*/
-
 h1
 {
    margin-top: 2em;
    font-size: 1.3em;
-   margin-bottom: 0.2em;
 }
-
 h2
 {
   font-size: 0.9em;
   font-weight: normal;
 }
-
 /*barre de recherche*/
-.divrecherche
+form
 {
   width: 32em;
   height: 3em;
   display: flex;
   border-color: #F2F2F2;
 }
-.icon
+.divicon  
 {
   display: flex;
   justify-content: center;
@@ -108,11 +100,11 @@ input
   align-items: center;
   border: 0.1em solid #F2F2F2;
 }
-#barre
+#barre /*disparition contour*/
 {
   border: none;
 }
-input:focus
+input:focus  /*disparition du contour quand on clique dedans*/
 {
   outline: transparent;
 }
@@ -122,7 +114,7 @@ input:focus
   color: black;
   font-size: 1.2em;
 }
-/*bouton  bleu rechercher*/
+/*BOUTON BLEU rechercher*/
 button
 {
   height: 3.6em;
@@ -139,17 +131,17 @@ button
   border-radius:0em 1em 1em 0em;
   cursor: pointer;
 }
-.buttonsearch
+.buttonsearch /*pour petit ecran*/
 {
   display: none;
 }
 .fa-search
 {
-  font-size: 1.5em;
+  font-size: 3em;
   color: white;
   text-align: center;
 }
-/*ligne filtres*/
+/*ligne Filtres*/
 .divoffiltres
 {
   width: 55em;
@@ -180,7 +172,6 @@ h6:hover
 {
   font-size: 1.1em;
   color: #0065FC;
-  border-radius: 0.5em;
   cursor: pointer;
 }
 .diveconomique 
@@ -285,7 +276,7 @@ h6:hover
   color: #0065FC;
 }
 
-/*                                        SECTION HEBERGEMENTS_START                         */
+/*                                SECTION HEBERGEMENTS_START                         */
 /*Contenant hébergements + populaires*/
 .sectionhebergement
 {
@@ -705,11 +696,14 @@ h3
 /*       ---------            RESPONSIVE        -------------------  */
 @media screen and (max-width:1439px) 
 {
-  html
+  body
   {
     width: auto;
   }
-
+  .divreservia,.texttrouver,h2,form,.divoffiltres,.divinformation
+  {
+    margin-left: 0.5em;
+  }
   .sectionhebergement
   {
     display: flex;
@@ -763,10 +757,10 @@ h3
 
 @media screen and (max-width:965px) 
 {
-    html
+    body
     {
        font-family : 'Raleway', sans-serif;
-       width: auto;
+       width: 640px;
        margin-left: auto;
        margin-right: auto;
     }
@@ -857,18 +851,12 @@ h3
       font-size: 2.2em;
     }
     /*BARRE DE RECHERCHE*/
-    .divrecherche  /* contenant de la barre recherche */
+    form  /* contenant de la barre recherche */
     {
       height: 5.92em;
-      width: 38em;
-      display: flex;
-
+      width: 38em; 
     }
-    form 
-    {
-      width: 40em;
-    }
-    .icon
+    .divicon
     {
       height: 6em;
       width: 8em;
@@ -890,6 +878,7 @@ h3
       height: 4em;
       width: 30em;
     }
+    /*bouton bleu rechercher*/
     .buttonsearch
     {
        display: flex;
@@ -903,15 +892,11 @@ h3
        border-radius:0em 3.5em 3.5em 0em;
        cursor: pointer;
     }
-    .fa-search
-    {
-      font-size: 3em;
-    }
     .rechercher
     {
       display: none;
     }
-    /*CONTENANT DES FILTRES*/
+    /*LIGNE DES FILTRES*/
     .divoffiltres
     {
       display: grid;
@@ -1222,7 +1207,7 @@ h3
 }
 @media screen and (max-width:639px)
 {
-  html
+  body
   {
      font-family : 'Raleway', sans-serif;
      width: 360px;
@@ -1322,7 +1307,7 @@ h3
     font-size: 1.1em;
   }
   /*BARRE DE RECHERCHE*/
-  .divrecherche  /* contenant de la barre recherche */
+  form  /* contenant de la barre recherche */
   {
     height: 3.9em;
     width: 19em;
@@ -1334,11 +1319,7 @@ h3
     height: 4em;
     width: 14em;
   }
-  form 
-  {
-    width: 19em;
-  }
-  .icon
+  .divicon
   {
     height: 4.2em;
     width: 3.5em;
@@ -1346,7 +1327,7 @@ h3
   }
   .fa-map-marker-alt
   {
-    font-size: 2em;
+    font-size: 1.7em;
   }
   #barre
   {
@@ -1363,24 +1344,13 @@ h3
   }
   .buttonsearch
   {
-     display: flex;
-     align-items: center;
-     justify-content: center;
      height: 5em;
      width: 3.5em;
-     background-color: #0065FC;
-     border: none;
-     text-decoration: none;
      border-radius:0em 1em 1em 0em;
-     cursor: pointer;
   }
   .fa-search
   {
     font-size: 2em;
-  }
-  .rechercher
-  {
-    display: none;
   }
   /*CONTENANT DES FILTRES*/
   .divoffiltres
@@ -1484,10 +1454,7 @@ h3
 /*                           SECTION HEBERGEMENTS                           */  
   .sectionhebergement
   {
-    display: flex;
-    flex-direction: column-reverse;
     width: 19em;
-    height: auto;
     margin-top: 0em;
   } 
   /* LES PLUS POPULAIRES*/
@@ -1497,7 +1464,6 @@ h3
     height: 46em;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 0em 0em 0em 0em;
   }
   .texticonpluspopulaires  /*texte et graphique*/
   {
@@ -1533,39 +1499,22 @@ h3
   {
     height: 130em;
     width: 19em;
-    margin-top: 3em;
-    background-color: transparent;
     border: 0em transparent;
   }
   #texth1
   {
     font-size: 1.2em;
     width: 12.5em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
   }
   .hotelr1,.hotelr2
   {
     height: 17.5em;
     width: 18em;
     box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
-    border: 0.1em solid #F2F2F2;
     margin-left: 0em;
-  }
-  .hotelr1
-  {
-    margin-top: 1.5em;
-  }
-  .hotelr2
-  {
-    margin-top: 1em;
   }
   .divrange1,.range2
   {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     height: 60em;
     width: 19em;
   }
@@ -1573,24 +1522,16 @@ h3
   {
     height: 11em;
     width: 17.5em;
-    border-radius: 1.4em 1.4em 0em 0em;
   }
   .auberge1,.hduport,.mouettes,.hmer,.panier,.amina
   {
     height: 11em;
     width: 17.5em;
-    border-radius: 1.4em 1.4em 0em 0em;
-    float:right;
-    border:transparent;
-    object-fit: cover;
   }
   .divtext1,.divtext2,.divtext3,.divtext4,.divtext5,.divtext6
   {
-    display: flex;
-    justify-content: space-around;
     height: 6em;
     width: 18em;
-    border-radius: 0em 0em 1.5em 1.5em;
   }
   .nomhotel,.prix,.divetoiles
   {
@@ -1611,17 +1552,12 @@ h3
   }
   .marseille
   {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    height: 114em;
    width: 19em;
   } 
   #titre
  {
-   width: 9.5em;
    margin-left: 0.5em;
-   margin-right: auto;
    font-size: 1.6em;
    margin-top: 0.5em;
   } 
@@ -1630,16 +1566,10 @@ h3
   {
     height: 17em;
     width: 19em;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow:0.1em 0.2em 0.2em 0.1em #F2F2F2;
   }
 /* textes sous images */
   h4,.nomimg3,.nomimg2,.nomimg1,.nomimg4
   {
-    padding: 0em;
     font-size: 1.2em;
     margin-top: 1.6em;
   }
@@ -1648,8 +1578,6 @@ h3
   {
     height: 11em;
     width: 18em;
-    border-radius: 1.5em 1.5em 0em 0em;
-    margin-top: 0.6em;
   }
 /* contenant avec 2 activités */
   .divfort_iles,.divnotre_parc
@@ -1667,7 +1595,6 @@ h3
     height: 50em;
     width: 19em;
     display: flex;
-    flex-direction: column;
     justify-content:flex-start;
     margin-left: 1.5em;
 

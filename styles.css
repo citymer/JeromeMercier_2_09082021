@@ -711,18 +711,23 @@ h3
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 56em;
+    width: auto;
   }
   nav 
   {
     margin-left: auto;
   }
- 
+  .divhebergement
+  {
+    width: auto;
+    margin-right: 3em;
+  }
   .divpluspopulaires
   {
-    width: 56em;
+    width: auto;
     height: 40em;
     margin-top: 1em;
+    margin-right: 3em;
   }
   .activites
   {
@@ -748,7 +753,7 @@ h3
   footer 
   {
     height: auto;
-    width:56em ;
+    width:auto ;
     margin-right: auto;
     margin-left: auto;
   }
@@ -757,21 +762,14 @@ h3
 
 @media screen and (max-width:965px) 
 {
-    body
-    {
-       font-family : 'Raleway', sans-serif;
-       width: 640px;
-       margin-left: auto;
-       margin-right: auto;
-    }
-
+    
     header
     {
       display: grid;
       grid-template-columns: 50% 1fr;
       grid-template-rows: 60% 1fr;
       height: 20em;
-      width: 38em;
+      width: auto;
     }
     .divreservia
     {
@@ -1008,7 +1006,7 @@ h3
     {
       display: flex;
       flex-direction: column-reverse;
-      width: 40em;
+      width: auto;
       height: auto;
       margin-top: 3em;
     } 
@@ -1047,7 +1045,7 @@ h3
     .divhebergement
     {
       height: 248em;
-      width: 40em;
+      width: auto;
       margin-top: 3em;
       background-color: transparent;
       border: 0.2em solid #F2F2F2;
@@ -1172,15 +1170,16 @@ h3
       height: 74em;
       width: 38em;
     }
-   /*FOOTER*/
+   /*      FOOTER     */
     footer
     {
       height: 76em;
-      width: 40em;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-around;
+      width: auto;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
 
     }
     .apropos,.hebergements,.assistance
@@ -1210,59 +1209,57 @@ h3
   body
   {
      font-family : 'Raleway', sans-serif;
-     width: 360px;
+     width: auto;
      margin-left: auto;
      margin-left: auto;
     }
-  body
-  {
-    width: 19em;
-  }
 
   header
   {
     display: grid;
     grid-template-columns: 50% 1fr;
     grid-template-rows: 50% 1fr;
-    height: 16em;
-    width: 19em;
-    margin-left: 1.5em;
+    height: 200px;
+    width: auto;
+    margin-left: 24px;
   }
   .divreservia
   {
-    width: 8em;
-    height: 6em;
+    width: 128px;
+    height: 96px;
   }
   #logoreservia 
   {
-    height: 4em;
+    height: 64px;
     width: auto;
   }
   nav
   {
-    margin-left: 0em;
-    width: 19em;
-    height: 7.2em;
+    margin-left: 0px;
+    width: 340px;
+    height: 115.2px;
   }
   .lienhebergements
   {
     grid-column-start: 1;
     grid-row-start: 1;
+    margin-left: 30px;
   }
   .lienactivites
   {
     grid-column-start: 2;
     grid-row-start: 2;
-    margin-right: 0.5em;
+    margin-right: 3px;
+    margin-left: auto;
   }
   .lienhebergements,.lienactivites
   {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4em;
-    width: 8.5em;
-    font-size: 1.6em;
+    height: 64px;
+    width: 120px;
+    font-size: 1.2em;
 
   }
   nav a:hover 
@@ -1277,11 +1274,11 @@ h3
     grid-column-start: 2;
     grid-row-start: 1;
     padding-left: 0em;
-    height: 2em;
-    font-size: 1.3em;
-    margin-top: 2.2em;
-    margin-left: 2.2em;
-    width: 5em;
+    height: 32px;
+    font-size: 1em;
+    margin-top: 52px;
+    margin-left: 60px;
+    width: 80px;
   }
   main 
   {
@@ -1290,8 +1287,8 @@ h3
 /*                     SECTION TROUVER AVEC ZONE DE RECHERCHE ET FILTRES                   */    
   .section 
   {
-    width: 19em;
-    height: 40em;
+    width: 304px;
+    height: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1309,21 +1306,21 @@ h3
   /*BARRE DE RECHERCHE*/
   form  /* contenant de la barre recherche */
   {
-    height: 3.9em;
-    width: 19em;
+    height: 62.4px;
+    width: 304px;
     display: flex;
 
   }
   .search
   {
-    height: 4em;
-    width: 14em;
+    height: 64px;
+    width: 245px;
   }
   .divicon
   {
-    height: 4.2em;
-    width: 3.5em;
-    border-radius: 1em 0em 0em 1em;
+    height: 67.2px;
+    width: 56px;
+    border-radius: 16px 0px 0px 16px;
   }
   .fa-map-marker-alt
   {
@@ -1331,22 +1328,22 @@ h3
   }
   #barre
   {
-    height: 2em;
-    width: 8em;
+    height: 32px;
+    width: 180px;
     font-size: 1.9em;
-    margin-left: 0.4em;
+    margin-left: 0em;
   }
   ::placeholder
   {
-    height: 4em;
-    width: 9em;
+    height: 64px;
+    width: 190px;
     font-size: 0.7em;
   }
   .buttonsearch
   {
-     height: 5em;
-     width: 3.5em;
-     border-radius:0em 1em 1em 0em;
+     height: 67px;
+     width: 56px;
+     border-radius:0px 16px 16px 0px;
   }
   .fa-search
   {
@@ -1364,11 +1361,11 @@ h3
     "romantique romantiques"
     "animaux animaux";
     height: auto;
-    width: 19em;
+    width: auto;
   }
   .divtextfiltres
   {
-    height: 2em;
+    height: 32px;
     margin-left: 2em;
     
   }
@@ -1385,45 +1382,45 @@ h3
   .diveconomique
   {
     grid-area: economique;
-    width: 10em;
+    width: 160px;
   }
   .divromantique
   {
     grid-area: romantique;
-    width: 13em;
+    width: 208px;
   }
   .diveconomique,.divromantique
   {
-    height: 3.6em;
-    border: 0.2em solid #F2F2F2;
-    border-radius: 3em 3em 3em 3em;
+    height: 56.96px;
+    border: 3.2px solid #F2F2F2;
+    border-radius: 48px;
     margin-top: 1em;
   }
   .divfamilial
   {
     grid-area: familial;
-    height: 3.6em;
-    width: 7.8em;
-    border: 0.2em solid #F2F2F2;
-    border-radius: 3em 3em 3em 3em;
+    height: 56.96px;
+    width: 140px;
+    border: 3.2px solid #F2F2F2;
+    border-radius: 48px;
     margin-top: 1em;
-    margin-left: 1.4em;
+    margin-left: 1em;
     margin-right: 0em;
   }
   .divanimaux
   {
     grid-area: animaux;
-    height: 3.6em;
-    width: 14em;
-    border: 0.2em solid #F2F2F2;
-    border-radius: 3em 3em 3em 3em;
+    height: 57.6px;
+    width: 224px;
+    border: 3.2px solid #F2F2F2;
+    border-radius: 60px 48px 48px 60px;
     margin-top: 1em;
   }
   .divbillet,.divenfant,.divcoeur,.divchien
   {
-    height:4em ;
-    width: 4em;
-    border-radius: 2.5em;
+    height: 64px;
+    width: 64px;
+    border-radius: 40px;
   }
   /*logo filtres*/
   .fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog
@@ -1433,57 +1430,56 @@ h3
   /*LIGNE INFORMATION*/
   .divinformation
   {
-    height: 5em;
-    width: 19em;
+    height: 80px;
+    width: auto;
   }
   .diviconinfo
   {
-    height:2em;
-    width: 2em;
-    border: 0.2em solid #F2F2F2;
-    border-radius: 2em 2em 2em 2em;
+    height:30px;
+    width: 33px;
+    border: 3.2px solid #F2F2F2;
+    border-radius: 32px;
     font-size: 0.8em;
-    width: 2em;
   }
   .textplus 
   {
     font-size: 0.9em;
     margin-left: 0.3em;
-    width: 19em;
+    width: auto;
   }
 /*                           SECTION HEBERGEMENTS                           */  
   .sectionhebergement
   {
-    width: 19em;
+    width: 304px;
     margin-top: 0em;
   } 
   /* LES PLUS POPULAIRES*/
   .divpluspopulaires
   {
-    width: 19em;
-    height: 46em;
+    width: 304px;
+    height: 736px;
     margin-left: auto;
     margin-right: auto;
   }
   .texticonpluspopulaires  /*texte et graphique*/
   {
     font-size: 1.4em;
-    width: 13em;
+    width: 208px;
   } 
   .hotelr3
   {
-    height: 11em;
-    width: 17.5em;
+    height: 176px;
+    width: 280px;
   } 
   .divimg7,.divimg8,.divimg9,.imgsoleil,.imgaucoeur,.imgbleu,.divtext7,.divtext8,.divtext9
   {
-    height: 10em;
-    width: 10em;
+    height: 160px;
+    width: 160px;
   }
   .divtext7,.divtext8,.divtext9
   {
-    width: 6.5em;
-    height: 10em;
+    width: 104px;
+    height: 160px;
   }
   .nomhotelpopulaires,.prixnuit,.divetoilespopulaires
   {
@@ -1491,47 +1487,47 @@ h3
   }
   .divetoilespopulaires
   {
-    width: 5em;
+    width: 80px;
     padding-top: 1em;
   }
 /*HEBERGEMENTS A MARSEILLE*/  
   .divhebergement
   {
-    height: 130em;
-    width: 19em;
+    height: 2080px;
+    width: 304px;
     border: 0em transparent;
   }
   #texth1
   {
-    font-size: 1.2em;
-    width: 12.5em;
+    font-size: 1.5em;
+    width: 210px;
   }
   .hotelr1,.hotelr2
   {
-    height: 17.5em;
-    width: 18em;
+    height: 280px;
+    width: 288px;
     box-shadow: 0.1em 0.1em 0.1em 0.1em #F2F2F2;
     margin-left: 0em;
   }
   .divrange1,.range2
   {
-    height: 60em;
-    width: 19em;
+    height: 960px;
+    width: 304px;
   }
   .divimg1,.divimg2,.divimg3,.divimg4,.divimg5,.divimg6
   {
-    height: 11em;
-    width: 17.5em;
+    height: 176px;
+    width: 280px;
   }
   .auberge1,.hduport,.mouettes,.hmer,.panier,.amina
   {
-    height: 11em;
-    width: 17.5em;
+    height: 176px;
+    width: 280px;
   }
   .divtext1,.divtext2,.divtext3,.divtext4,.divtext5,.divtext6
   {
-    height: 6em;
-    width: 18em;
+    height: 96px;
+    width: 288px;
   }
   .nomhotel,.prix,.divetoiles
   {
@@ -1547,13 +1543,13 @@ h3
 /*        SECTION       ACTIVITES A MARSEILLE                */
   .activites /*section*/
   {
-    height: 124em;
-    width: 19em;
+    height: 1984px;
+    width: 304px;
   }
   .marseille
   {
-   height: 114em;
-   width: 19em;
+   height: 1824px;
+   width: 304px;
   } 
   #titre
  {
@@ -1564,8 +1560,8 @@ h3
   /* contenant images & textes */
   .divvieux_port,.pomegues,.frioul,.divparc,.notre_dame,.parc_longchamp
   {
-    height: 17em;
-    width: 19em;
+    height: 272px;
+    width: 304px;
   }
 /* textes sous images */
   h4,.nomimg3,.nomimg2,.nomimg1,.nomimg4
@@ -1576,14 +1572,14 @@ h3
 /* images activités */
   .vieuxport,.fort,.iles,.parc_nationnal,.dame,.longchamp
   {
-    height: 11em;
-    width: 18em;
+    height: 176px;
+    width: 288px;
   }
 /* contenant avec 2 activités */
   .divfort_iles,.divnotre_parc
   {
-    height: 37em;
-    width: 19em;
+    height: 592px;
+    width: 304px;
   }
   .frioul,.notre_dame,.parc_longchamp,.pomegues
   {
@@ -1592,30 +1588,27 @@ h3
  /*              FOOTER                 */
   footer
   {
-    height: 50em;
-    width: 19em;
+    height: 800px;
     display: flex;
     justify-content:flex-start;
-    margin-left: 1.5em;
-
   }
   .apropos
   {
-    height: 14em;
-    width: 16em;
+    height: 224px;
+    width: 256px;
     margin-left: 1.5em;
     margin-top: 2em;
   }
   .hebergements,.assistance
   {
-    height: 12em;
-    width: 16em;
+    height: 192px;
+    width: 256px;
     margin-top: 1.5em;
     margin-left: 1.5em;
   }
   h3 
   {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   .textefooter
   {

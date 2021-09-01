@@ -420,7 +420,7 @@ h6:hover
   margin-top: 1.4em;
   font-weight: bold;
 }
-/*Contenant les plus populaires*/
+/*     Contenant les plus populaires  */
 .divpluspopulaires
 {
   display: flex;
@@ -720,14 +720,16 @@ h3
   .divhebergement
   {
     width: auto;
-    margin-right: 3em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
   }
   .divpluspopulaires
   {
     width: auto;
     height: 40em;
     margin-top: 1em;
-    margin-right: 3em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
   }
   .activites
   {
@@ -1013,7 +1015,6 @@ h3
     /* les plus populaires*/
     .divpluspopulaires
     {
-      width: 40em;
       height: 80em;
       border-radius: 0em 0em 0em 0em;
     }
@@ -1208,11 +1209,9 @@ h3
 {
   body
   {
-     font-family : 'Raleway', sans-serif;
-     width: auto;
      margin-left: auto;
      margin-left: auto;
-    }
+  }
 
   header
   {
@@ -1450,16 +1449,14 @@ h3
 /*                           SECTION HEBERGEMENTS                           */  
   .sectionhebergement
   {
-    width: 304px;
+    width: 350px;
     margin-top: 0em;
   } 
   /* LES PLUS POPULAIRES*/
   .divpluspopulaires
   {
-    width: 304px;
+    width: auto;
     height: 736px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .texticonpluspopulaires  /*texte et graphique*/
   {
@@ -1494,7 +1491,7 @@ h3
   .divhebergement
   {
     height: 2080px;
-    width: 304px;
+    width: auto;
     border: 0em transparent;
   }
   #texth1
@@ -1544,18 +1541,20 @@ h3
   .activites /*section*/
   {
     height: 1984px;
-    width: 304px;
+    width: 330px;
   }
   .marseille
   {
    height: 1824px;
-   width: 304px;
+   width: auto;
   } 
   #titre
  {
-   margin-left: 0.5em;
+   margin: 0em;
    font-size: 1.6em;
-   margin-top: 0.5em;
+   margin-top: 1.5em;
+   margin-left: 1.2em;
+   width: auto;
   } 
   /* contenant images & textes */
   .divvieux_port,.pomegues,.frioul,.divparc,.notre_dame,.parc_longchamp
